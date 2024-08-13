@@ -2,58 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <h1>Hello World! Here is a summary of what I can code in HTML and CSS </h1>
-    
+    <div class="title"> <h1>Hello World! Here is a summary of what I can code in HTML and CSS </h1>
+    </div>
     <meta
       content="width=device-width, initial-scale=1, maximum-scale=1"
       name="viewport"
     />
-
-    <style>
-        /*  Edit display property below */
-    .box{
-        display: block;
-        border: 2px solid blue;
-    }
-    </style>
+  <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div class="box"> Text Elements </div>
+    <div class="header box"> Text Elements </div>
     <div class="box"> <h1> Heading 1 </h1>
-    <h2> Heading 2 </h2>
-    <h3> Heading 3 </h3>
-    <p> Paragraph </p> 
-    <p> A paragraph with <br /> 
+      <h2> Heading 2 </h2>
+      <h3> Heading 3 </h3>
+      <p> Paragraph </p> 
+      <p> A paragraph with <br /> 
       a line break </p> 
-    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-  <p>"A Blockquote"</p>
-  <footer>—Online professor, <cite>Udacity</cite></footer>
-</blockquote> </div>
-    <div class="box"> Lists </div>
-    <div class="box"> <p> Unordered list </p>
-<ul> <li> flour </li> 
-<li> water </li> 
-<li> salt </li> </ul> 
+      <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      <p>"A Blockquote"</p>
+      <footer>—Online professor, <cite>Udacity</cite></footer>
+      </blockquote> 
+      <p> <a href="https://www.google.com/search?q=smiling+labrador+retreivers&oq=smiling+labrador+retreivers&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyCggFEAAYgAQYogQyCggGEAAYgAQYogQyBggHEEUYPNIBCDYzNThqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8" rel="noopener" target="_blank"
+      >This is a link</a> </p>
+
+    <div class="header box"> Lists </div>
+    <div class="box"> 
+      <p> Unordered list </p>
+        <ul> <li> flour </li> 
+        <li> water </li> 
+        <li> salt </li> </ul> 
       <p> Ordered list </p>
       <ol>
-  <li>mix</li>
-  <li>knead</li>
-  <li>bake</li>
-</ol>
-       <div class="box"> Images </div>
-      <div class="box"> 
-      <img
-  src="img/smilingdog.jpg
-  alt="A Picture of a Smiling Labrador Retriever"
-  width="480"
-  height="320"
-           
-/>
-       <p> <a href="https://www.google.com/search?q=smiling+labrador+retreivers&oq=smiling+labrador+retreivers&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyCggFEAAYgAQYogQyCggGEAAYgAQYogQyBggHEEUYPNIBCDYzNThqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8" rel="noopener" target="_blank"
->A link to see more pictures of smiling Labrador Retrievers</a> </p>
-      </div>
+        <li>mix</li>
+        <li>knead</li>
+        <li>bake</li>
+      </ol>
+    </div>
+    <div class="header box"> Typography </div>
+    <div class="box"> 
+      </br> <div class="uppercase">Uppercase Text</div> 
+         <div class="italic">Italic Text</div>
+         <div class="bold">Bold Text</div>
+         <div class="lighter">Lighter Text</div>
+                             </br>
+         <div class="small">6pt Text</div>
+         <div class="smallish">8pt Text</div>
+         <div class="mediumish">10pt Text</div>                     
+         <div class="medium">12pt Text</div> 
+         <div class="big">24pt Text</div>
+    <br />
+    <div class="sample">This is an example of a MutatorSans Font </div>
+    <div class="cursive">This is an example of a cursive font.</div>
+    <div class="fantasy">This is an example of a fantasy font.</div>
+    <br />
+    <div class="red">Red text</div>
+    <div class="orange">Orange text</div>
+    <div class="yellow">Yellow text</div>
+    <div class="green">Green text</div>
+    <div class="blue">Blue text</div>
+    <div class="indigo">Indigo text</div>
+    <div class="purple">Purple text</div>
+    <br />
+       </div>
+<div class="header box"> Images </div>
+<div class="wrapper">
+  <div class="box"><img src="img/smilingdog.jpg" alt="smiling dog" class="contain"></div>
+</div>
       
     </div> 
+
   </body>
 </html>
