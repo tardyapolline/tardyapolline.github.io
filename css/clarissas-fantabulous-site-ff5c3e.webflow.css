@@ -1,5 +1,5 @@
 :root {
-  --white: #90caff;
+  --blue: #90caff;
   --black: black;
 }
 
@@ -10,6 +10,21 @@
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
+}
+
+.w-layout-layout {
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  padding: 20px;
+}
+
+.w-layout-cell {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
 }
 
 body {
@@ -258,6 +273,8 @@ figcaption {
 }
 
 .section {
+  float: none;
+  clear: none;
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -388,7 +405,7 @@ figcaption {
 }
 
 .navigation {
-  background-color: var(--white);
+  background-color: var(--blue);
   color: #000;
   align-items: center;
   padding: 30px 50px;
@@ -722,17 +739,25 @@ figcaption {
   margin-bottom: 40px;
 }
 
-.social-media-heading {
+.portfolio-heading {
   margin-bottom: 60px;
 }
 
 .social-media-grid {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: ". . . ."
-                       ". . . .";
+  cursor: pointer;
+  object-fit: contain;
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) 200px;
+  grid-template-areas: "Area-2 Area";
+  grid-auto-rows: minmax(auto, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  justify-content: stretch;
   margin-bottom: 30px;
+  display: grid;
+  position: relative;
 }
 
 .project-overview-grid {
@@ -886,6 +911,231 @@ figcaption {
   margin-right: 9px;
 }
 
+.video {
+  overflow: visible;
+}
+
+.background-video {
+  box-sizing: border-box;
+  aspect-ratio: 3 / 2;
+  object-fit: fill;
+  flex-flow: row;
+  margin-bottom: 25px;
+  margin-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  position: relative;
+  overflow: visible;
+}
+
+.portfolio-title {
+  text-transform: capitalize;
+  font-family: Cabinetgrotesk, Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.container-2 {
+  float: none;
+  clear: none;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  vertical-align: sub;
+  flex-flow: wrap;
+  grid-template: "Area Area-2"
+  / .25fr .25fr;
+  grid-auto-rows: 0;
+  grid-auto-columns: 1fr;
+  place-content: stretch;
+  place-items: start end;
+  display: grid;
+  position: static;
+  overflow: auto;
+}
+
+.background-video-2 {
+  box-sizing: border-box;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  flex-flow: row;
+  display: block;
+  overflow: visible;
+}
+
+.background-video-3 {
+  flex-flow: row;
+  display: inline-flex;
+  position: relative;
+}
+
+.background-video-4 {
+  display: inline-flex;
+}
+
+.background-video-5 {
+  box-sizing: border-box;
+  aspect-ratio: auto;
+  object-fit: fill;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video-6 {
+  object-fit: cover;
+  align-self: auto;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-stack {
+  float: none;
+  clear: none;
+  aspect-ratio: auto;
+  object-fit: fill;
+  border-radius: 0;
+  width: 1920px;
+  min-width: 100%;
+  max-width: 100px;
+  height: 1080px;
+  min-height: 200%;
+  max-height: 100px;
+  margin-bottom: 195px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  position: sticky;
+  overflow: visible;
+}
+
+.sound-of-spring-thumbnail {
+  box-sizing: content-box;
+  aspect-ratio: 16 / 9;
+  object-fit: fill;
+  object-position: 50% 50%;
+  width: 100%;
+  min-width: 0;
+  max-width: 100rem;
+  height: 100%;
+  min-height: 0;
+  max-height: 900rem;
+  position: sticky;
+  overflow: auto;
+}
+
+.unconventional-spaces-thumbnail {
+  box-sizing: border-box;
+  aspect-ratio: 16 / 9;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.heading-5 {
+  grid-column-gap: 0em;
+  grid-row-gap: 0em;
+  aspect-ratio: 16 / 9;
+  outline-offset: 0px;
+  direction: ltr;
+  color: #fff;
+  text-align: left;
+  object-fit: fill;
+  outline: 3px #fff;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 1920px;
+  min-width: 100%;
+  max-width: 100px;
+  height: 1080px;
+  min-height: 130px;
+  max-height: 258px;
+  margin: auto auto 0;
+  padding: 20px;
+  font-family: "P 22 Operina Pro", Georgia, sans-serif;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+  text-decoration: none;
+  display: flex;
+  position: sticky;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  overflow: visible;
+}
+
+.heading-6 {
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 1920px;
+  min-width: 100%;
+  max-width: 100px;
+  height: 1080px;
+  min-height: 130px;
+  max-height: 258px;
+  margin: auto auto 0;
+  padding: 20px;
+  font-family: Droid Sans, sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+}
+
+.sound-of-spring-thumbnai {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  overflow: auto;
+}
+
+.the-sound-of-spring {
+  aspect-ratio: 16 / 9;
+  object-fit: fill;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "P 22 Operina Pro", Georgia, sans-serif;
+  font-size: 10em;
+  display: flex;
+  position: sticky;
+}
+
+.inflatable-structures {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.heading-7 {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 3em;
+  line-height: 50px;
+  display: flex;
+  position: sticky;
+}
+
 @media screen and (max-width: 991px) {
   .styleguide-block {
     text-align: center;
@@ -915,7 +1165,9 @@ figcaption {
   }
 
   .navigation-item {
+    opacity: 1;
     text-align: center;
+    background-color: #90caff;
     padding: 15px 30px;
     transition: background-color .4s, opacity .4s, color .4s;
   }
@@ -933,7 +1185,22 @@ figcaption {
   }
 
   .navigation {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    background-color: var(--blue);
+    opacity: 1;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    outline-offset: 0px;
+    -webkit-text-fill-color: inherit;
+    background-clip: border-box;
+    outline: 3px #000;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
     padding: 25px 30px;
+    display: flex;
+    position: relative;
   }
 
   .menu-button {
@@ -1031,7 +1298,7 @@ figcaption {
     margin-right: auto;
   }
 
-  .social-media-heading {
+  .portfolio-heading {
     text-align: center;
     width: 80%;
     margin-left: auto;
@@ -1039,6 +1306,7 @@ figcaption {
   }
 
   .social-media-grid {
+    cursor: pointer;
     grid-template: ". ."
                    ". ."
                    ". ."
@@ -1091,6 +1359,32 @@ figcaption {
   .heading-3 {
     line-height: 23px;
   }
+
+  .portfolio-title {
+    text-align: left;
+    flex-flow: row;
+    justify-content: flex-start;
+    display: flex;
+    position: static;
+    inset: 0% auto auto 0%;
+  }
+
+  .quick-stack {
+    margin-bottom: 132px;
+  }
+
+  .heading-5 {
+    max-height: 195px;
+  }
+
+  .heading-6 {
+    text-align: center;
+    max-height: 195px;
+  }
+
+  .inflatable-structures {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1119,10 +1413,18 @@ figcaption {
   .section {
     margin-left: 15px;
     margin-right: 15px;
+    display: none;
   }
 
   .section.cc-contact {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    margin: auto;
     padding: 15px;
+    display: block;
   }
 
   .paragraph-bigger {
@@ -1132,6 +1434,10 @@ figcaption {
 
   .logo-link {
     padding-left: 0;
+  }
+
+  .navigation-item {
+    opacity: 1;
   }
 
   .navigation {
@@ -1213,7 +1519,7 @@ figcaption {
     max-width: 470px;
   }
 
-  .personal-features-grid, .social-media-heading {
+  .personal-features-grid, .portfolio-heading {
     width: 70%;
     max-width: 470px;
   }
@@ -1276,6 +1582,19 @@ figcaption {
     margin-top: 26px;
     padding-right: 0;
   }
+
+  .quick-stack {
+    float: none;
+    clear: none;
+    object-fit: fill;
+    margin: auto auto 78px;
+    bottom: auto;
+    overflow: visible;
+  }
+
+  .heading-5, .heading-6 {
+    max-height: 145px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1295,10 +1614,18 @@ figcaption {
     overflow: hidden;
   }
 
+  .navigation-item {
+    opacity: 1;
+  }
+
   .navigation {
-    background-color: var(--white);
+    background-color: var(--blue);
+    opacity: 1;
+    -webkit-text-fill-color: inherit;
+    background-clip: border-box;
     padding-left: 20px;
     padding-right: 20px;
+    position: static;
   }
 
   .menu-button, .menu-button.w--open {
@@ -1329,7 +1656,7 @@ figcaption {
     max-width: none;
   }
 
-  .personal-features-grid, .social-media-heading, .project-overview-grid, .project-description-grid {
+  .personal-features-grid, .portfolio-heading, .project-overview-grid, .project-description-grid {
     width: 100%;
     max-width: none;
   }
@@ -1360,6 +1687,18 @@ figcaption {
   .heading-3 {
     float: left;
     margin-top: 7px;
+  }
+
+  .quick-stack {
+    position: sticky;
+    overflow: scroll;
+  }
+
+  .sound-of-spring-thumbnail {
+    min-width: 0;
+    max-width: 900rem;
+    min-height: 0;
+    max-height: 900rem;
   }
 }
 
@@ -1595,6 +1934,12 @@ figcaption {
   grid-area: 2 / 4 / 3 / 5;
 }
 
+#w-node-be207a19-d5ac-5342-f56c-6e20d3912506-78a0a6bf {
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
 @media screen and (max-width: 991px) {
   #w-node-_9b2922ad-09b1-aebb-0430-7dee623c62c8-90a318ec, #w-node-dac044b7-be90-60f3-414d-4224828ffd8f-90a318ec, #w-node-dac044b7-be90-60f3-414d-4224828ffd99-90a318ec {
     grid-area: 2 / 1 / 3 / 2;
@@ -1747,6 +2092,12 @@ figcaption {
   }
 }
 
+@media screen and (max-width: 479px) {
+  #w-node-be207a19-d5ac-5342-f56c-6e20d3912506-78a0a6bf {
+    display: grid;
+  }
+}
+
 
 @font-face {
   font-family: 'Cabinet Grotesk';
@@ -1754,6 +2105,13 @@ figcaption {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+@font-face {
+  font-family: 'P 22 Operina Pro';
+  src: url('../fonts/p22-operina-pro-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
 }
 @font-face {
   font-family: 'Cabinetgrotesk';
