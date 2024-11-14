@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Nov 13 2024 15:49:15 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Nov 14 2024 00:11:51 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="672f8811c03d722c78a0a6bf" data-wf-site="66c72397fad8c0a090a318a0">
 <head>
   <meta charset="utf-8">
@@ -53,21 +53,33 @@ $.getScript('https://cdnjs.cloudflare.com/ajax/libs/vissense/0.10.0/vissense.min
     </div>
   </div>
   <section class="thumbnail">
-    <div class="code-embed w-embed"><video class="wb-video-styles-controller" wb-embed="video" playsinline="" loop="" muted="" autoplay="" style="width: auto; height: auto; object-fit: cover;" data-wf-ignore="true">
-        <source src="https://tardyapollineportfolio.s3.eu-west-3.amazonaws.com/Inflatable+Installation+Strong+Thumbnail.mp4" data-wf-ignore="true" type="video/mp4">
-      </video></div>
+    <div class="code-embed w-embed">
+      <div class="video-container">
+        <video class="wb-video-styles-controller" wb-embed="video" playsinline="" loop="" muted="" autoplay="" style=" object-fit: contain;" data-wf-ignore="true">
+          <source src="https://tardyapollineportfolio.s3.eu-west-3.amazonaws.com/Inflatable+Installation+Strong+Thumbnail.mp4" data-wf-ignore="true" type="video/mp4">
+        </video>
+      </div>
+      <style>
+    .video-container {
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .wb-video-styles-controller {
+        width: auto;
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+</style>
+    </div>
     <h1 class="anomaly-production">Anomaly Production</h1>
-  </section>
-  <section class="thumbnail">
-    <div class="w-embed"><video class="wb-video-styles-controller" wb-embed="video" playsinline="" loop="" muted="" autoplay="" style="width: 1500px; height: auto; object-fit: cover;" data-wf-ignore="true">
-        <source src="https://tardyapollineportfolio.s3.eu-west-3.amazonaws.com/horizonchaser_thumbnail.mp4" data-wf-ignore="true" type="video/mp4">
-      </video></div>
-    <h1 class="heading-7">Horizon Chaser</h1>
-    <h1 class="anomaly-production"> </h1>
   </section>
   <div class="footer-wrap">
     <div class="columns w-row">
-      <div class="w-clearfix w-col w-col-4 w-col-medium-4"><img src="images/Linkedin-Icon.png" loading="lazy" width="40" alt="" class="image-3">
+      <div class="column w-clearfix w-col w-col-4 w-col-medium-4"><img src="images/Linkedin-Icon.png" loading="lazy" width="40" alt="" class="image-3">
         <h3 class="heading-8">LinkedIn</h3>
       </div>
       <div class="w-clearfix w-col w-col-4 w-col-medium-4"><img src="images/Github-Icon.png" loading="lazy" width="40" alt="" class="image-4">
