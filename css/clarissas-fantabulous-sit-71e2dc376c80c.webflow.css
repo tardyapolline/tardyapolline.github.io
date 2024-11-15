@@ -2134,8 +2134,19 @@ figcaption {
     margin-bottom: 18px;
   }
 
+  .div-block {
+    margin-top: 0;
+  }
+
   .code-embed-2 {
+    margin-left: -22px;
     overflow: clip;
+  }
+
+  .heading-9 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 20px;
   }
 }
 
