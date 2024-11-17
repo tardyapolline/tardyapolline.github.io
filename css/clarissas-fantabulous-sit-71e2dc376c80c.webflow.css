@@ -1238,15 +1238,10 @@ figcaption {
   overflow: visible;
 }
 
-.linkedin-icon, .image-4 {
+.linkedin-icon, .image-4, .email-icon {
   float: left;
   clear: right;
   overflow: visible;
-}
-
-.email-icon {
-  float: left;
-  clear: right;
 }
 
 .background-video-7 {
@@ -2073,7 +2068,7 @@ figcaption {
   }
 
   .columns {
-    margin-right: -86px;
+    margin-right: -28px;
   }
 
   .heading-8 {
@@ -2240,12 +2235,12 @@ figcaption {
   }
 
   .image {
-    max-width: 160px;
+    max-width: 150px;
     max-height: none;
   }
 
   .heading-2 {
-    margin-top: 19px;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0;
@@ -2353,6 +2348,7 @@ figcaption {
     max-height: 30px;
     display: block;
     position: static;
+    overflow: visible;
   }
 
   .image-4 {
@@ -2486,6 +2482,7 @@ figcaption {
     max-height: 30px;
     display: block;
     position: static;
+    overflow: visible;
   }
 }
 
