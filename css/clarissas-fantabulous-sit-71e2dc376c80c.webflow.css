@@ -618,7 +618,7 @@ figcaption {
   align-items: center;
   margin-top: auto;
   padding: 40px 50px;
-  display: flex;
+  display: block;
 }
 
 .webflow-link {
