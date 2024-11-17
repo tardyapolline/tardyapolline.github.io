@@ -616,6 +616,7 @@ figcaption {
   background-color: #90caff;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
   padding: 40px 50px;
   display: flex;
 }
@@ -900,6 +901,8 @@ figcaption {
 
 .body {
   object-fit: fill;
+  flex-flow: column;
+  display: flex;
 }
 
 .text-block {
@@ -1307,7 +1310,7 @@ figcaption {
 }
 
 .container-5 {
-  display: inline-block;
+  display: block;
 }
 
 .video-2 {
@@ -1409,13 +1412,14 @@ figcaption {
 
 .home-page-container {
   float: none;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   width: auto;
   max-width: none;
   margin: auto;
   padding: 20px;
-  display: block;
+  display: flex;
 }
 
 .the-sound-of-spring-container {
