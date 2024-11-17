@@ -2406,6 +2406,10 @@ figcaption {
     color: #996d37;
   }
 
+  .link-3 {
+    text-decoration: none;
+  }
+
   .link-9 {
     color: #3c3b37;
     display: inline-block;
