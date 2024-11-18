@@ -1355,11 +1355,16 @@ figcaption {
 }
 
 .link-2 {
-  color: #fff;
+  color: #a8863c;
   text-decoration: none;
   transition-property: opacity;
   display: inline-block;
   position: relative;
+}
+
+.link-2:hover {
+  color: #c49d4b;
+  text-shadow: 1px 1px 2px #ccc470;
 }
 
 .link-3 {
@@ -1389,12 +1394,29 @@ figcaption {
   text-decoration: none;
 }
 
-.the-sound-of-spring-link, .anomaly-production-link {
+.the-sound-of-spring-link {
   color: #fff;
   text-decoration: none;
   transition-property: opacity;
   display: inline-block;
   position: relative;
+}
+
+.the-sound-of-spring-link:hover {
+  color: #fff;
+  text-shadow: 2px 2px 9px #c8ff7a;
+}
+
+.anomaly-production-link {
+  color: #3b3b33;
+  text-decoration: none;
+  transition-property: opacity;
+  display: inline-block;
+  position: relative;
+}
+
+.anomaly-production-link:hover {
+  text-shadow: 2px 2px 2px var(--blue);
 }
 
 .anomaly-production-text-block {
