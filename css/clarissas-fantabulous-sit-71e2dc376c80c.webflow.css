@@ -2457,6 +2457,10 @@ figcaption {
     color: #fff;
   }
 
+  .the-sound-of-spring-link:active {
+    color: #fff;
+  }
+
   .anomaly-production-link {
     opacity: 1;
     color: #3d3c3a;
