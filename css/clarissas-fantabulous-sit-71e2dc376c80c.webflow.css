@@ -1328,7 +1328,7 @@ figcaption {
 }
 
 .text-block-2 {
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-family: Georgia, Times, Times New Roman, serif;
   font-style: normal;
   display: inline-block;
 }
@@ -1445,7 +1445,7 @@ figcaption {
   align-items: center;
   width: auto;
   max-width: none;
-  margin: auto auto 180px;
+  margin: auto auto 100px;
   padding: 0 20px 20px;
   display: block;
 }
@@ -1453,6 +1453,7 @@ figcaption {
 .the-sound-of-spring-title {
   color: #1f1d11;
   margin-top: 0;
+  margin-bottom: 5px;
   font-family: "P 22 Operina Pro", Georgia, sans-serif;
   font-size: 80px;
   font-weight: 400;
@@ -1468,6 +1469,91 @@ figcaption {
 
 .column-2 {
   padding-bottom: 0;
+}
+
+.heading-13 {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.heading-14 {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 28px;
+}
+
+.text-block-3 {
+  font-family: Georgia, Times, Times New Roman, serif;
+}
+
+.heading-15 {
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.bold-text {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.image-8 {
+  float: left;
+  clear: right;
+  border-radius: 20px;
+}
+
+.container-7 {
+  float: left;
+  clear: right;
+  padding-top: 75px;
+  padding-right: 22px;
+}
+
+.container-8 {
+  float: none;
+  clear: right;
+}
+
+.section-3 {
+  display: flex;
+}
+
+.heading-16 {
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.heading-17 {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.heading-18 {
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.text-block-4 {
+  font-family: Georgia, Times, Times New Roman, serif;
+}
+
+.heading-19 {
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.text-block-5 {
+  font-family: Georgia, Times, Times New Roman, serif;
 }
 
 @media screen and (max-width: 991px) {
@@ -1813,7 +1899,7 @@ figcaption {
 
   .the-sound-of-spring-container {
     margin: auto;
-    padding: 0 20px 20px;
+    padding: 0 20px 80px;
   }
 
   .the-sound-of-spring-title {
@@ -2114,6 +2200,10 @@ figcaption {
     margin-bottom: 20px;
   }
 
+  .text-block-2 {
+    line-height: 22px;
+  }
+
   .anomaly-production-text-block {
     margin-top: 40px;
     margin-bottom: 149px;
@@ -2138,9 +2228,7 @@ figcaption {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 80px;
   }
 
   .the-sound-of-spring-title {
@@ -2153,6 +2241,10 @@ figcaption {
   .github-icon {
     float: right;
     clear: left;
+  }
+
+  .text-block-3, .text-block-4, .text-block-5 {
+    line-height: 22px;
   }
 }
 
@@ -2509,6 +2601,10 @@ figcaption {
     display: block;
     position: static;
     overflow: visible;
+  }
+
+  .text-block-3, .text-block-4, .text-block-5 {
+    line-height: 22px;
   }
 }
 
