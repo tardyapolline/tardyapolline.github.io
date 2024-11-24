@@ -2085,6 +2085,58 @@ figcaption {
   overflow: visible;
 }
 
+.slider-2 {
+  height: 600px;
+}
+
+.slide-10 {
+  background-image: url('../images/20220429_111250.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-11 {
+  background-image: url('../images/20220429_111236.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-12 {
+  background-image: url('../images/20220422_105402.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-13 {
+  background-image: url('../images/20220422_105347.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-14 {
+  background-image: url('../images/IMG_5428.png');
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-15 {
+  background-image: url('../images/IMG_1268.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-block-22 {
+  margin-left: 40px;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-style: italic;
+}
+
 @media screen and (max-width: 991px) {
   .styleguide-block {
     text-align: center;
@@ -2847,6 +2899,14 @@ figcaption {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
   }
+
+  .slider-2 {
+    height: 400px;
+  }
+
+  .slide-10, .slide-11, .slide-12, .slide-13, .slide-14, .slide-15 {
+    background-size: contain;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3109,13 +3169,18 @@ figcaption {
 
   .heading-9 {
     object-fit: contain;
-    margin-top: -121px;
+    margin-top: -158px;
     margin-bottom: 0;
     padding-right: 20px;
   }
 
-  .heading-10, .heading-11 {
+  .heading-10 {
     object-fit: contain;
+  }
+
+  .heading-11 {
+    object-fit: contain;
+    margin-top: -150px;
   }
 
   .code-embed-3 {
@@ -3234,6 +3299,19 @@ figcaption {
   .picture-of-me-inflating-flower {
     max-width: 300px;
     margin: 0;
+  }
+
+  .slider-2 {
+    height: 400px;
+  }
+
+  .slide-10, .slide-11, .slide-12, .slide-13, .slide-14, .slide-15 {
+    background-size: contain;
+  }
+
+  .text-block-22 {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
