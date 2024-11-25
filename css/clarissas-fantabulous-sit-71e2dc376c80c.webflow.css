@@ -1,5 +1,6 @@
 :root {
   --blue: #90caff;
+  --link-blue: #6d94b8;
   --black: black;
 }
 
@@ -2167,7 +2168,13 @@ figcaption {
   display: block;
 }
 
-.link-22, .link-23, .link-24 {
+.link-22, .link-23 {
+  padding-left: 0;
+  display: inline-block;
+}
+
+.link-24 {
+  color: var(--link-blue);
   padding-left: 0;
   display: inline-block;
 }
@@ -2891,7 +2898,8 @@ figcaption {
   }
 
   .text-block-2 {
-    line-height: 22px;
+    text-align: left;
+    line-height: 24px;
   }
 
   .anomaly-heading {
@@ -2992,6 +3000,10 @@ figcaption {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .text-block-23 {
+    text-align: left;
   }
 }
 
@@ -3279,6 +3291,7 @@ figcaption {
   }
 
   .text-block-2 {
+    text-align: left;
     line-height: 22px;
   }
 
@@ -3424,6 +3437,16 @@ figcaption {
 
   .link-22 {
     color: #6d94b8;
+  }
+
+  .link-23 {
+    color: var(--link-blue);
+    display: inline-block;
+  }
+
+  .text-block-23 {
+    text-align: left;
+    line-height: 20px;
   }
 }
 
