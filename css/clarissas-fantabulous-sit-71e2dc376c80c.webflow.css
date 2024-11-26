@@ -2185,6 +2185,11 @@ figcaption {
   line-height: 24px;
 }
 
+.link-25 {
+  padding-left: 0;
+  display: inline-block;
+}
+
 @media screen and (max-width: 991px) {
   .styleguide-block {
     text-align: center;
@@ -2601,6 +2606,11 @@ figcaption {
   .horizon-chaser-text-container {
     margin: auto;
     padding: 20px;
+  }
+
+  .link-25 {
+    padding-left: 0;
+    display: inline-block;
   }
 }
 
@@ -3447,6 +3457,10 @@ figcaption {
   .text-block-23 {
     text-align: left;
     line-height: 20px;
+  }
+
+  .link-25 {
+    color: var(--link-blue);
   }
 }
 
