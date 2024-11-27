@@ -2341,6 +2341,17 @@ figcaption {
   line-height: 26px;
 }
 
+.from-paper-to-pixels-text-block {
+  float: left;
+  clear: right;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-family: Georgia, Times, Times New Roman, serif;
+  display: block;
+}
+
 @media screen and (max-width: 991px) {
   .styleguide-block {
     text-align: center;
@@ -3183,7 +3194,7 @@ figcaption {
     height: 250px;
   }
 
-  .heading-23 {
+  .heading-23, .from-paper-to-pixels-text-block {
     text-align: left;
   }
 }
@@ -3635,11 +3646,23 @@ figcaption {
   }
 
   .text-block-24 {
+    text-align: left;
+    font-family: Georgia, Times, Times New Roman, serif;
     line-height: 22px;
   }
 
   .slider-3 {
     height: 160px;
+  }
+
+  .heading-23 {
+    font-family: Georgia, Times, Times New Roman, serif;
+  }
+
+  .from-paper-to-pixels-text-block {
+    text-align: left;
+    font-family: Georgia, Times, Times New Roman, serif;
+    line-height: 22px;
   }
 }
 
