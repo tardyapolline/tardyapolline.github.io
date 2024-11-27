@@ -2190,6 +2190,157 @@ figcaption {
   display: inline-block;
 }
 
+.text-block-24 {
+  float: left;
+  clear: right;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-family: Georgia, Times, Times New Roman, serif;
+  display: block;
+}
+
+.slider-3 {
+  height: 500px;
+  max-height: none;
+}
+
+.slide-16 {
+  background-image: url('../images/Bar-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-17 {
+  background-image: url('../images/Compass-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-18 {
+  background-image: url('../images/Bar-Globe-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.slide-19 {
+  background-image: url('../images/Door-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-20 {
+  background-image: url('../images/Lamp-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-21 {
+  background-image: url('../images/Gramophone-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-11 {
+  float: left;
+  clear: none;
+  display: block;
+}
+
+.container-14 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: inline-grid;
+}
+
+.column-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.columns-3 {
+  margin-top: 20px;
+}
+
+.column-5 {
+  padding-right: 0;
+}
+
+.slide-22 {
+  background-image: url('../images/Clock-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-23 {
+  background-image: url('../images/Curtain-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-24 {
+  background-image: url('../images/Table-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-1-3 {
+  background-image: url('../images/Armchair-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-1-4 {
+  background-image: url('../images/Armchair-closeup-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-1-5 {
+  background-image: url('../images/Ceiling-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-1-6 {
+  background-image: url('../images/Table-Partitions-Asset.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slide-25 {
+  background-image: url('../images/Aerial-View.png');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.heading-23 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 20px;
+  line-height: 26px;
+}
+
 @media screen and (max-width: 991px) {
   .styleguide-block {
     text-align: center;
@@ -2604,13 +2755,25 @@ figcaption {
   }
 
   .horizon-chaser-text-container {
-    margin: auto;
+    margin: auto 0;
     padding: 20px;
+    display: block;
   }
 
   .link-25 {
     padding-left: 0;
     display: inline-block;
+  }
+
+  .slider-3 {
+    background-color: #fff;
+    height: 330px;
+  }
+
+  .slide-17 {
+    height: auto;
+    padding-bottom: 0;
+    padding-right: 0;
   }
 }
 
@@ -3005,14 +3168,22 @@ figcaption {
     text-align: center;
     max-width: none;
     margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .text-block-23 {
+  .text-block-23, .text-block-24 {
+    text-align: left;
+  }
+
+  .slider-3 {
+    height: 250px;
+  }
+
+  .heading-23 {
     text-align: left;
   }
 }
@@ -3438,8 +3609,8 @@ figcaption {
 
   .horizon-chaser-text-container {
     margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
@@ -3461,6 +3632,14 @@ figcaption {
 
   .link-25 {
     color: var(--link-blue);
+  }
+
+  .text-block-24 {
+    line-height: 22px;
+  }
+
+  .slider-3 {
+    height: 160px;
   }
 }
 
